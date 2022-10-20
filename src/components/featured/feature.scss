@@ -1,0 +1,90 @@
+.feature {
+    height: 90vh;
+    position: relative;
+
+    .category {
+        position: absolute;
+        top: 10rem;
+        color: white;
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+
+        select {
+            height: 1.75rem;
+            background: var(--primary-color);
+            color: white;
+            font-size: 1rem;
+            border: 1px solid white;
+        }
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .info {
+        position: absolute;
+        width: 30%;
+        top: 40%;
+        left: 4rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 250px;
+            justify-content: center;
+            display: flex;
+            margin: auto;
+        }
+
+        span {
+            font-size: 1.25rem;
+            justify-content: center;
+            margin: 1rem .5rem;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: flex-start;
+            margin-left: .5rem;
+            gap: 1rem;
+
+            button {
+                padding: .75rem;
+                cursor: pointer;
+                background: rgb(50, 50, 50, .5);
+                color: white;
+                border: none;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: var(--primary-color);
+                }
+            }
+
+            span {
+                margin: 5px;
+                font-size: 1.25rem;
+                font-weight: 400;
+                align-items: center;
+            }
+
+            .icon {
+                align-items: center;
+                font-size: 1.5rem;
+            }
+
+
+        }
+    }
+}

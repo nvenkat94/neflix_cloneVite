@@ -1,0 +1,250 @@
+.registerMain {
+    background: #000;
+    color: white;
+    overflow: hidden;
+
+    .register {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to bottom,
+                rgba(0, 0, 0, .9) 0%,
+                rgba(0, 0, 0, 0) 50%,
+                rgba(0, 0, 0, 1) 100%), url(../../assets/netflixBG.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+
+
+        .topbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 150px;
+
+            img {
+                margin-top: -20px;
+                margin-left: 5rem;
+                height: 150px;
+                object-fit: cover;
+                // width: 200px;
+                // align-items: center;
+            }
+
+            .topright {
+                display: flex;
+                margin-top: -20px;
+                justify-content: flex-end;
+                margin-right: 50px;
+                align-items: center;
+
+                select {
+                    height: 2rem;
+                    background: transparent;
+                    border: 1px solid white;
+                    color: white;
+                    cursor: pointer;
+                }
+
+                .loginButton {
+                    margin-left: 50px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: white;
+                    padding: .5rem;
+                    cursor: pointer;
+                    background: red;
+                    border: none;
+                    border-radius: 5px;
+
+                }
+            }
+        }
+
+        .container {
+            width: 100%;
+            // height: 90%;
+            margin-top: 15%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            h2 {
+                font-weight: 400;
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+            }
+
+            h3 {
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+
+            .signup {
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                height: 3rem;
+                border-radius: 5px;
+
+                input {
+                    flex: 9;
+                    height: 100%;
+                    justify-content: center;
+                    padding: 0;
+                    border: none;
+                }
+
+                ::placeholder {
+                    font-size: 1.2rem;
+                    align-items: center;
+                    padding-left: 10px;
+                }
+
+                button {
+                    height: 100%;
+                    align-items: center;
+                    background: red;
+                    color: white;
+                    cursor: pointer;
+                    border: none;
+                    flex: 3;
+                    font-size: 1.25rem;
+
+                }
+            }
+        }
+    }
+
+    .section {
+        border-top: 1rem solid gray;
+        height: 60vh;
+        display: flex;
+        padding: auto;
+
+        .flex6 {
+            flex: 4;
+            // align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: auto;
+
+            // padding-left: 200px;
+            h1 {
+                font-size: 50px;
+                padding-left: 100px;
+                font-weight: 500;
+            }
+
+            h2 {
+                padding-left: 100px;
+                font-weight: 400;
+            }
+        }
+
+        .flex4 {
+            flex: 4;
+            justify-content: center;
+            display: flex;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .faq {
+        border-top: 1rem solid gray;
+        border-bottom: 1rem solid gray;
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        flex-direction: column;
+        width: 100%;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .accordion {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            position: relative;
+
+            .accord {
+                width: 65%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                margin: auto;
+            }
+
+            .signup {
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                height: 3rem;
+                border-radius: 5px;
+                padding-top: 1.5rem;
+
+                input {
+                    flex: 9;
+                    height: 100%;
+                    justify-content: center;
+                    padding: 0;
+                    border: none;
+                }
+
+                ::placeholder {
+                    font-size: 1.2rem;
+                    align-items: center;
+                    padding-left: 10px;
+                }
+
+                button {
+                    height: 100%;
+                    align-items: center;
+                    background: red;
+                    color: white;
+                    cursor: pointer;
+                    border: none;
+                    flex: 3;
+                    font-size: 1.25rem;
+
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 1rem;
+    }
+}

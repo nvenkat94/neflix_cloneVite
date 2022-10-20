@@ -1,0 +1,99 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    height: 75px;
+    z-index: 10;
+    background: linear-gradient(to top, transparent 0%, rgb(0,0,0,.4) 50%);
+
+    
+    &.scrolled{
+    background: var(--primary-color);
+}
+}
+
+.container {
+    display: flex;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+
+    .left {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 30px;
+            margin-right: 40px;
+        }
+
+        span {
+            margin-right: 40px;
+            cursor: pointer;
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+
+        // justify-content: space-between;
+        img {
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .icon {
+            margin: 0 15px;
+            cursor: pointer;
+        }
+
+        span {
+            cursor: pointer;
+        }
+
+        .profile {
+            .options {
+                display: none;
+                background-color: var(--primary-color);
+            }
+
+            span {
+                padding: 10px;
+
+                &:hover {
+                    color: red;
+                }
+            }
+
+            &:hover {
+                .options {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    right: 0.25rem;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+
+        .search {
+            position: relative;
+
+
+
+
+            .options {
+                position: absolute;
+                right: 2rem;
+                top: 0rem;
+                border-radius: 0.5rem;
+                align-items: center;
+
+            }
+        }
+    }
+}

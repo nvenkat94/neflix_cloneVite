@@ -1,0 +1,68 @@
+import React, { useState } from 'react'
+import './navbar.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faSearch} from '@fortawesome/free-solid-svg-icons'
+import { faBell,faCaretSquareDown,} from '@fortawesome/free-regular-svg-icons'
+const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  window.onscroll = () => {
+    setIsScrolled(window.pageYOffset === 0 ? false : true)
+    return () => {
+      window.onscroll = null
+    }
+  }
+  console.log(isScrolled)
+  return (
+    <div className={isScrolled?"navbar scrolled":"navbar"}>
+      <div className="container">
+        <div className="left">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
+            alt="logo"
+          />
+          <span>Home</span>
+          <span>Movies</span>
+          <span>Web Series</span>
+          <span>New and Popular</span>
+          <span>My List</span>
+        </div>
+        <div className="right">
+          <div className="search">
+            <FontAwesomeIcon
+              icon={faSearch}
+              style={{ cursor: 'pointer' }}
+              className="icon"
+            />
+            <div className="options">
+              <input />
+            </div>
+          </div>
+          <span>KID</span>
+          <FontAwesomeIcon
+            icon={faBell}
+            style={{ cursor: 'pointer' }}
+            className="icon"
+          />
+          <img
+            src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""
+            className="icon"
+          />
+          <div className="profile">
+            <FontAwesomeIcon
+              icon={faCaretSquareDown}
+              style={{ cursor: 'pointer' }}
+              className="icon"
+            />
+            <div className="options">
+              <span>Settings</span>
+              <span>Log Out</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+export default Navbar
