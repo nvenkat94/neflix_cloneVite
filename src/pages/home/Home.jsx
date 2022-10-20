@@ -8,11 +8,20 @@ import ListItem from '../../components/listItem/ListItem';
 import List from '../../components/list/List'
 const Home = () => {
   return (
+    <>
     <div className='home'>
-      <Navbar  />
-      
-      Homed
+      <Navbar />
+      <Featured type='movie'/>
+      <List/>
+      <List/>
     </div>
+  </>
+
+    // <div className='home'>
+    //   <Navbar  />
+      
+    //   Homed
+    // </div>
   )
 }
 

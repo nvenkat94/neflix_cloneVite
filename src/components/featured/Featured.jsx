@@ -1,6 +1,7 @@
 import React from 'react'
 import netflixBG from '../../assets/netflixBG.jpg'
 import johnwick from '../../assets/johnwick.png'
+import john from '../../assets/john.png'
 import './feature.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlayCircle } from '@fortawesome/free-regular-svg-icons'
@@ -29,7 +30,7 @@ const Featured = ({ type }) => {
           </select>
         </div>)
       }
-      <img src={netflixBG} alt="BG_Netflix" />
+      <img src={john} alt="BG_Netflix" />
       <div className="info">
         <img src={johnwick} alt="info" />
         <span className="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium Quos minus accusantium quisquam molestiae?
